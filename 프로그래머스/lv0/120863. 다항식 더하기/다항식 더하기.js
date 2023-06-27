@@ -2,7 +2,7 @@ function solution(polynomial) {
     let variable = 0
     let constant = 0
     let arr = polynomial.split(" ")
-    arr[0].slice(0,2)
+    
     for(let i=0; i<arr.length; i+=2){
     if(arr[i].indexOf('x') === -1){
         constant += Number(arr[i])
