@@ -1,0 +1,11 @@
+function solution(common) {
+    if ((common[1]-common[0])==(common[2]-common[1])){
+        return common.pop() + common[1] - common[0];
+    }
+    else{
+        return common.pop()*common[1]/common[0];
+    }
+}
+
+풀이과정은 똑같지만 common 배열의 마지막 value값을 common.pop으로 가져가는 모습이 인상깊었다.
+나는 common[common.length-1]로 계산하곤 했는데 pop이 가독성이 더 좋은것 같다.
