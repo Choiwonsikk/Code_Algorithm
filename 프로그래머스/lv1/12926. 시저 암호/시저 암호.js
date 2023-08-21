@@ -1,13 +1,13 @@
 function solution(s, n) {
     return s.split("").map(char => {
         const code = char.charCodeAt()
-        if(97 <= code && code <= 122){
-            return String.fromCharCode((code+n - 97) % 26 + 97)
+        if(96<code && code<123){
+          return String.fromCharCode((code+n - 97) % 26 + 97)
         }
-
-        if(65 <= code && code <= 90){
-            return String.fromCharCode((code+n - 65) % 26 + 65)
+        if(64<code && code<91){
+          return String.fromCharCode((code+n - 65) % 26 + 65)
         }
+        
         return " "
     }).join("")
 }
